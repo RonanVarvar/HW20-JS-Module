@@ -5,6 +5,7 @@ define(
             MemoryNewNumber = false,
             MemoryPendingOperation = '',
             display = document.querySelector('.c-calculator__display');
+
        return {
 
         NumPressed: function(number) {
@@ -53,6 +54,7 @@ define(
                 if (curReadOut.indexOf('.') == -1)
                     curReadOut += '.';
             }
+
             display.value = curReadOut;
         },
 

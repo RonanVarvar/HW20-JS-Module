@@ -10,6 +10,7 @@ define(
 
             digit.forEach(function(item) {
                 item.addEventListener('click', show);
+
                 function show () {
                     CalculationModel.NumPressed(item.value);
                 }
@@ -35,6 +36,7 @@ define(
 
             operation.forEach(function(item) {
                 item.addEventListener('click', Operation);
+
                 function Operation () {
                     CalculationModel.Operation(item.value);
                     console.log();

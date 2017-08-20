@@ -79,7 +79,6 @@ define(
                 button,
                 calculatorElement = document.querySelector('.c-calculator');
 
-
             display = document.createElement('input');
             display.classList.add('c-calculator__display');
             display.setAttribute('maxlength', 12);
@@ -108,6 +107,7 @@ define(
                 }  else {
                     button.classList.add('operation');
                 }
+
                 calculatorElement.appendChild(button);
             });
         })();
