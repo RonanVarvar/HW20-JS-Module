@@ -1,0 +1,67 @@
+$green: lime;
+$red: red;
+$blue: #88e;
+$gray: #ddd;
+@import "fonts.scss";
+
+.c-calculator {
+  margin: 0 auto;
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+
+  &__display {
+    background-color: lavender;
+    width: 100%;
+    height: 20%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 40px;
+    font-family: Cristal;
+  }
+
+  &__button {
+    font: inherit;
+    width: 25%;
+    height: 20%;
+    background-color: $gray;
+    border: 1px solid white;
+    outline: 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: ($gray, 20%);
+    }
+
+    &.number, decimal {
+      background-color: $gray;
+
+      &:hover, decimal {
+        background-color: darken($gray, 20%);
+      }
+    }
+    &.ClearEntry, &.Clear {
+      width: 50%;
+      background-color: $gray;
+      &:hover {
+        background-color: $red;
+      }
+    }
+    &.operation {
+      background-color: $blue;
+
+      &:hover {
+        background-color: darken($blue, 20%);
+      }
+    }
+  }
+}
