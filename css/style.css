@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Cristal";
-  src: url("../fonts/cristal.ttf"); }
+  font-family: "DIGIFACE";
+  src: url("../fonts/DIGIFACE.ttf"); }
 .c-calculator {
   margin: 0 auto;
   width: 250px;
@@ -21,8 +21,8 @@
     justify-content: center;
     padding: 10px;
     box-sizing: border-box;
-    font-size: 40px;
-    font-family: Cristal; }
+    font-size: 50px;
+    font-family: DIGIFACE; }
   .c-calculator__button {
     font: inherit;
     width: 25%;
@@ -33,9 +33,13 @@
     cursor: pointer; }
     .c-calculator__button:hover {
       background-color: #ddd, 20%; }
-    .c-calculator__button.number, .c-calculator__button decimal {
+    .c-calculator__button.number {
       background-color: #ddd; }
-      .c-calculator__button.number:hover, .c-calculator__button.number decimal, .c-calculator__button decimal:hover, .c-calculator__button decimal decimal {
+      .c-calculator__button.number:hover {
+        background-color: #aaaaaa; }
+    .c-calculator__button.decimal {
+      background-color: #ddd; }
+      .c-calculator__button.decimal:hover {
         background-color: #aaaaaa; }
     .c-calculator__button.ClearEntry, .c-calculator__button.Clear {
       width: 50%;

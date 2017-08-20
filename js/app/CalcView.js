@@ -84,6 +84,7 @@ define(
             display = document.createElement('input');
             display.classList.add('c-calculator__display');
             display.setAttribute('maxlength', 12);
+            display.value = '0';
             calculatorElement.appendChild(display);
 
             function addButton (text, value) {
