@@ -39,7 +39,6 @@ define(
 
                 function Operation () {
                     CalculationModel.Operation(item.value);
-                    console.log();
                 }
             });
         })();
