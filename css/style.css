@@ -22,7 +22,10 @@
     padding: 10px;
     box-sizing: border-box;
     font-size: 50px;
-    font-family: DIGIFACE; }
+    font-family: DIGIFACE;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
   .c-calculator__button {
     font: inherit;
     width: 25%;
