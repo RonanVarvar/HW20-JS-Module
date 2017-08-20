@@ -77,7 +77,6 @@ define(
                 ],
                 display,
                 button,
-                clearButton,
                 calculatorElement = document.querySelector('.c-calculator');
 
 
